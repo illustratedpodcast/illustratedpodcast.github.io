@@ -32,9 +32,11 @@ body {
 }
 .audio-control {
     flex: 4 0%;
+    margin-bottom: 10px;
 }
 .back, .forward {
     flex: 1 0px;
+    margin-bottom: 10px;
 }
 .back {
     margin-right: 10px;
@@ -47,7 +49,6 @@ body {
 @media all and (max-width: 600px) {
     .audio-control {
         flex: 1 100%;
-        margin-bottom: 10px;
     }
 
     .back {

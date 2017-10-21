@@ -30,6 +30,16 @@ function initPage(times, images) {
     forwardButton.addEventListener("click", skipForward);
 
     /* Functions */
+    function play() {
+        audio.play();
+        mainButton.innerText = "Pause";
+    }
+
+    function pause() {
+        audio.pause();
+        mainButton.innerText = "Play"
+    }
+
     function skipBackward() {
         if (currentTag < 1) return;
         var newTag = allTags[currentTag - 1]
@@ -47,9 +57,9 @@ function initPage(times, images) {
     }
 
     function updateProgressBar() {
-        var percentage = audio.currentTime/audio.duration;
+        var percentage = (audio.currentTime/audio.duration) * 100;
         var playhead = document.getElementById("playhead");
-        playhead.style.left = percentage + "%";
+        playhead.style.left = "calc(" + percentage + "% - 15px";
     }
 
     function seek(time) {
@@ -62,14 +72,15 @@ function initPage(times, images) {
 
     function handleMainButtonClick() {
         if (audio.paused) {
-            audio.play();
+            play();
         }
         else {
-            audio.pause();
+            pause();
         }
     }
 
     function handleTimeUpdate(e) {
+        updateProgressBar();
         if (currentTag >= allTags.length - 1) return;
         var nextTag = allTags[currentTag + 1]
         if (audio.currentTime > nextTag.time)
