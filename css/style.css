@@ -10,6 +10,11 @@ body {
     min-height: 150px;
 }
 
+.logo {
+    height: 50px;
+    width: auto;
+}
+
 #header, #content, #audio-control {
     display: flex;
     flex-direction: row;
@@ -17,6 +22,7 @@ body {
 #header {
     margin: 0px 10px;
     justify-content: space-between;
+    align-items: center;
 }
 
 #content {
