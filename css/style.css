@@ -15,14 +15,14 @@ body {
 }
 
 .logo, .menu {
-    height: 25px;
-    width: 25px;
+    height: 35px;
+    width: 35px;
 }
 .logo {
-    background: no-repeat center/80% url(../content/IconOverGrey_100px.png);
+    background: no-repeat center/75% url(../content/IconOverGrey_100px.png);
 }
 .menu {
-    background: no-repeat center/80% url(../content/Hamburger_50px.png);
+    background: no-repeat center/100% url(../content/Hamburger_50px.png);
 }
 
 .header, .content, .audio-control {
