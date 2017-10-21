@@ -14,6 +14,13 @@ function initPage(times, images, audioSrc) {
             image: images[i]
         });
     }
+    allTags.sort(function(a, b) {
+        var t_1 = a.time,
+            t_2 = b.time;
+        if (typeof(t_1) !== "number") t_1 = Number.parseInt(t_1);
+        if (typeof(t_2) !== "number") t_2 = Number.parseInt(t_2);
+        return t_1 - t_2;
+    });
 
     var audio = document.getElementById("sound");
 
