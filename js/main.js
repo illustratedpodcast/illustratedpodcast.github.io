@@ -94,6 +94,10 @@ function initPage(times, images) {
 
     function updateIllustrationContent(content) {
         var container = document.getElementById("illustration-content");
-        container.innerHTML = content;
+        container.src = content;
     }
+
+    /* Initialize Content */
+    var container = document.getElementById("illustration-content");
+    container.src = allTags[0].image;
 }
