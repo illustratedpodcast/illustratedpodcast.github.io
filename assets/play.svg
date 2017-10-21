@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="618.67 218 108.838 108.838">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #25b2b2;
+      }
+
+      .cls-3 {
+        filter: url(#Ellipse_76);
+      }
+    </style>
+    <filter id="Ellipse_76" x="618.67" y="218" width="108.838" height="108.838" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="play_button" data-name="play button" transform="translate(627.67 225)">
+    <g class="cls-3" transform="matrix(1, 0, 0, 1, -627.67, -225)">
+      <circle id="Ellipse_76-2" data-name="Ellipse 76" class="cls-1" cx="45.419" cy="45.419" r="45.419" transform="translate(627.67 225)"/>
+    </g>
+    <path id="play_button-2" data-name="play button" class="cls-2" d="M120.289,84.337l-22.821,15.7a3.728,3.728,0,0,1-5.843-3.071v-31.4a3.728,3.728,0,0,1,5.843-3.071l22.821,15.7a3.729,3.729,0,0,1,0,6.143Z" transform="translate(-58.317 -35.594)"/>
+  </g>
+</svg>

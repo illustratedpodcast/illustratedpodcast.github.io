@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="107 54 674 102">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        font-size: 75px;
+        font-family: OpenSans-Semibold, Open Sans;
+        font-weight: 600;
+      }
+
+      .cls-2 {
+        fill: #002f2f;
+      }
+    </style>
+  </defs>
+  <text id="InteractivePodcast" class="cls-1" transform="translate(107 134)"><tspan x="0" y="0">Interactive</tspan><tspan class="cls-2" y="0">Podcast</tspan></text>
+</svg>

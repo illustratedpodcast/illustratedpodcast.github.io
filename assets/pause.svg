@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="618.669 218 108.838 108.838">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #25b2b2;
+      }
+
+      .cls-3 {
+        filter: url(#Ellipse_78);
+      }
+    </style>
+    <filter id="Ellipse_78" x="618.669" y="218" width="108.838" height="108.838" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="pause" transform="translate(-2736 -1412)">
+    <g class="cls-3" transform="matrix(1, 0, 0, 1, 2736, 1412)">
+      <circle id="Ellipse_78-2" data-name="Ellipse 78" class="cls-1" cx="45.419" cy="45.419" r="45.419" transform="translate(627.67 225)"/>
+    </g>
+    <rect id="Rectangle_29" data-name="Rectangle 29" class="cls-2" width="12" height="38" rx="5" transform="translate(3393 1663)"/>
+    <rect id="Rectangle_30" data-name="Rectangle 30" class="cls-2" width="12" height="38" rx="5" transform="translate(3413 1663)"/>
+  </g>
+</svg>
