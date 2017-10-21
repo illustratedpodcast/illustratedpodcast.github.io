@@ -11,21 +11,17 @@
                 <a id="header-credit" href="">Hamburger</a>
             </div>
             <div class="content">
-                <div class="back">
-                    <button class="btn" id="backButton">Skip Backward</button>
-                </div>
+                <button class="back btn" id="backButton">Skip Backward</button>
                 <div class="audio-control">
-                    <button class="btn" id="mainButton">Play</button>
+                    <button class="main btn" id="mainButton">Play</button>
                     <div class="audio-bar">
                         <div class="progress" id="timeline"></div>
-                        <div class="progress-bar" id="playhead"></div>
+                        <div class="progress-head" id="playhead"></div>
                     </div>
-                    <audio id="sound" src="content/15SecIntroAtheismOct17.mp3" type="audio/mpeg"></audio>
+                    <audio id="sound" src="content/15SecIntroAtheismOct17.mp3" type="audio/mpeg" preload="auto"></audio>
                     <!-- <input id="mute" /> -->
                 </div>
-                <div class="forward">
-                    <button class="btn" id="forwardButton">Skip Forward</button>
-                </div>
+                <button class="forward btn" id="forwardButton">Skip Forward</button>
             </div>
         </div>
         <div class="illustration">
