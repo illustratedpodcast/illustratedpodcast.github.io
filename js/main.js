@@ -46,6 +46,7 @@ function initPage(times, images, audioSrc) {
         audio.currentTime = newTag.time;
         updateIllustrationContent(newTag.image);
         currentTagIndex = currentTagIndex - 1;
+        updateProgressBar();
     }
 
     function handleSkipForward() {
@@ -54,11 +55,19 @@ function initPage(times, images, audioSrc) {
         audio.currentTime = newTag.time;
         updateIllustrationContent(newTag.image);
         currentTagIndex = currentTagIndex + 1;
+        updateProgressBar();
     }
 
     function handleTimelineClick(e) {
         var newTime = (e.layerX/e.target.clientWidth) * audio.duration;
+        var newIndex = getIndexFromTime(newTime);
+
         audio.currentTime = newTime;
+
+        if (newIndex !== currentTagIndex) {
+            currentTagIndex = newIndex;
+            updateIllustrationContent(allTags[newIndex].image);
+        }
         updateProgressBar();
     }
 
@@ -94,6 +103,12 @@ function initPage(times, images, audioSrc) {
     function updateIllustrationContent(content) {
         var container = document.getElementById("illustration-content");
         container.src = content;
+    }
+
+    function getIndexFromTime(time) {
+        for (var i = 0; i < allTags.length - 1; i++) {
+            if (allTags[i].time > time) return i;
+        }
     }
 
     /* Initialize Content */
