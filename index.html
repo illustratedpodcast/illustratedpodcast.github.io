@@ -12,24 +12,40 @@
             </div>
             <div class="content">
                 <div class="back">
-                    <button class="btn">Skip Backward</button>
+                    <button class="btn" id="backButton">Skip Backward</button>
                 </div>
                 <div class="audio-control">
-                    <button class="btn" id="play">Play</button>
-                    <div class="audio-bar" id="sound">
-                        <div class="progress"></div>
-                        <div class="progress-bar"></div>
+                    <button class="btn" id="mainButton">Play</button>
+                    <div class="audio-bar">
+                        <div class="progress" id="timeline"></div>
+                        <div class="progress-bar" id="playhead"></div>
                     </div>
-                    <!-- <audio id="audio" src="content/15SecIntroAtheismOct17.mp3" type="audio/mpeg"></audio> -->
+                    <audio id="sound" src="content/15SecIntroAtheismOct17.mp3" type="audio/mpeg"></audio>
                     <!-- <input id="mute" /> -->
                 </div>
                 <div class="forward">
-                    <button class="btn">Skip Forward</button>
+                    <button class="btn" id="forwardButton">Skip Forward</button>
                 </div>
             </div>
         </div>
         <div class="illustration">
-            Stuff
+            <div id="illustration-content"></div>
         </div>
+        <script src="js/main.js"></script>
+        <script type="text/javascript">
+        var time = [1, 5, 11, 14, 18, 30, 39, 49, 54, 79, 83, 88, 95, 143, 151, 
+            165, 176, 189, 195, 214, 231, 250, 269, 289, 300, 316, 337, 353, 364,
+            376, 380, 384, 388, 392, 600000
+        ];
+        var image = ["../Intro/Intro2.html", "../Intro/Intro2.html", "../Intro/Intro3.html",
+            "../Intro/Intro4.html", "../Intro/Intro5.html", "../Intro/Intro6.html", "Screengrab1.html", "Screengrab5.html", "Screengrab10.html",
+            "Screengrab20.html", "Screengrab35.html", "Screengrab30.html", "Screengrab40.html", "Screengrab45.html", "Screengrab50.html",
+            "Screengrab55.html", "Screengrab60.html", "Screengrab65.html", "Screengrab70.html", "Screengrab75.html", "Screengrab80.html",
+            "Screengrab85.html", "Screengrab90.html", "Screengrab95.html", "Screengrab100.html", "Screengrab105.html", "Screengrab110.html",
+            "Screengrab115.html", "Screengrab120.html", "Screengrab125.html", "Screengrab130.html", "Screengrab135.html", "Screengrab140.html",
+            "Screengrab145.html", "Screengrab150.html", "Screengrab155.html", "Screengrab160.html", "Screengrab165.html", "Screengrab170.html",
+        ]
+        initPage(time, image)
+        </script>
     </body>
 </html>
