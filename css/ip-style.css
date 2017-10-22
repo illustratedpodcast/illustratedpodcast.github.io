@@ -80,6 +80,17 @@ body {
     background: no-repeat center/50% url(../assets/next.svg)
 }
 
+/* Illustration */
+.illustration {
+    display: flex;
+    flex: 1;
+    height: 80vh;
+}
+
+#illustration-content {
+    flex: 1 100%;
+    border: none;
+}
 
 /* Common */
 
