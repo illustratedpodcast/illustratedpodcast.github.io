@@ -84,12 +84,12 @@ body {
 .illustration {
     display: flex;
     flex: 1;
-    height: 80vh;
 }
 
 #illustration-content {
     flex: 1 100%;
     border: none;
+    height: 80vh;
 }
 
 /* Common */
