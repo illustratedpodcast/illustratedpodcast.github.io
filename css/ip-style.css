@@ -53,7 +53,6 @@ body {
 
 /* Player */
 .player {
-    /* flex: 1 70px; */
     display: flex;
     background: #002F2F;
     flex-flow: row wrap;
@@ -73,6 +72,32 @@ body {
 .btn.forward {
     background: no-repeat center/50% url(../assets/next.svg)
 }
+
+/* Audio Bar */
+
+.audio-bar {
+    position: relative;
+    height: 30px;
+    min-width: 200px;
+    margin: 0px 20px;
+}
+.progress {
+    position: absolute;
+    bottom: 14px;
+    height: 5px;
+    width: 100%;
+    background: #fff;
+}
+.progress-head {
+    position: absolute;
+    top:4px;
+    left:-15px;
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    background: lightgray;
+}
+
 
 /* Illustration */
 .illustration {
