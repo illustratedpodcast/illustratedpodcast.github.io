@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
+
 * {
     box-sizing: border-box;
 }
 body {
     display: flex;
     flex-flow: column;
+    font-family: 'Open Sans', sans-serif;
     margin: 0;
 }
 
@@ -11,50 +14,41 @@ body {
 
 .header {
     background: #25B2B2;
-    flex: 0 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
 }
 
 .header > .logo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: 20px 71px 20px 20px;
-    width: 337px;
-    height: 51px;
-    background: no-repeat center/100% url(../assets/InteractivePodcast.png);
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 2.2em;
+    padding-right: 10px;
+}
+
+.header > .logo span {
+    color: #002f2f;
 }
 
 .header > .menu {
-    margin: 20px;
-    position: absolute;
-    right: 0;
+    position: relative;
+    width: 50px;
+    border-top: 7px solid white;
+    border-bottom: 7px solid white;
+    height: 40px;
 }
 .header > .menu:before {
     content: "";
     position: absolute;
-    top: 0;
-    right: 0;
-    width: 51px;
-    height: 7px;
-    border-top: 21px double #fff;
-    border-bottom: 8px solid #fff;
+    top: 9px;
+    width: 100%;
+    border-top: 7px solid #fff;
 }
 
 .header > .title {
     display:none;
-}
-
-@media all and (max-width:500px) {
-    .header > .logo {
-        width: calc(337px * .6);
-        height: calc(51px * .6);
-    }
-    .header > .title {
-        position: absolute;
-        display: inline-block;
-        margin: 0 20px;
-        top: 55px;
-    }
 }
 
 /* Player */
@@ -95,7 +89,6 @@ body {
 /* Common */
 
 .title {
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5em;
     color: #fff;
     padding: 10px;
