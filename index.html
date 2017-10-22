@@ -1,8 +1,8 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <link rel="stylesheet" type="text/css" href="css/style.css"/>
-        <title>Atheism Podcast</title>
+        <link rel="stylesheet" type="text/css" href="css/ip-style.css"/>
+        <title>Podcast: Atheism</title>
     </head>
     <body>
         <div class="header">
@@ -11,19 +11,18 @@
             <a href="" class="menu"></a>
         </div>
         <div class="player">
-            <div class="content">
-                <button class="back btn" id="backButton">Skip Backward</button>
-                <div class="audio-control">
-                    <button class="main btn" id="mainButton">Play</button>
-                    <div class="audio-bar">
-                        <div class="progress" id="timeline"></div>
-                        <div class="progress-head" id="playhead"></div>
-                    </div>
-                    <audio id="sound" src="" type="audio/mpeg" preload="auto"></audio>
-                    <!-- <input id="mute" /> -->
+            <div class="title">Atheism</div>
+            <div class="audio-control">
+                <div class="audio-bar">
+                    <div class="progress" id="timeline"></div>
+                    <div class="progress-head" id="playhead"></div>
                 </div>
-                <button class="forward btn" id="forwardButton">Skip Forward</button>
+                <audio id="sound" src="" type="audio/mpeg" preload="auto"></audio>
+                <!-- <input id="mute" /> -->
             </div>
+            <button class="back btn" id="backButton"></button>
+            <button class="main btn play" id="mainButton"></button>
+            <button class="forward btn" id="forwardButton"></button>
         </div>
         <div class="illustration">
             <iframe id="illustration-content" src=""  autostart="0" autoplay="0"  scrolling="no"  allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>

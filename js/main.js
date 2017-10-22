@@ -91,13 +91,15 @@ function initPage(times, images, audioSrc) {
 
     function play() {
         audio.play();
-        mainButton.innerText = "Pause";
+        mainButton.classList.remove("play");
+        mainButton.classList.add("pause");
         timer = setInterval(updateTime, 1000);
     }
 
     function pause() {
         audio.pause();
-        mainButton.innerText = "Play"
+        mainButton.classList.remove("pause");
+        mainButton.classList.add("play");
         clearInterval(timer);
     }
 

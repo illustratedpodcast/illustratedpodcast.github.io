@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-flow: column;
+    margin: 0;
+}
+
+/* Header */
+
+.header {
+    background: #25B2B2;
+    flex: 0 90px;
+}
+
+.header > .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 20px 71px 20px 20px;
+    width: 337px;
+    height: 51px;
+    background: no-repeat center/100% url(../assets/InteractivePodcast.png);
+}
+
+.header > .menu {
+    margin: 20px;
+    position: absolute;
+    right: 0;
+}
+.header > .menu:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 51px;
+    height: 7px;
+    border-top: 21px double #fff;
+    border-bottom: 8px solid #fff;
+}
+
+.header > .title {
+    display:none;
+}
+
+@media all and (max-width:500px) {
+    .header > .logo {
+        width: calc(337px * .6);
+        height: calc(51px * .6);
+    }
+    .header > .title {
+        position: absolute;
+        display: inline-block;
+        margin: 0 20px;
+        top: 55px;
+    }
+}
+
+/* Player */
+.player {
+    /* flex: 1 70px; */
+    display: flex;
+    background: #002F2F;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.btn.play {
+    background: no-repeat center/100% url(../assets/play.svg)
+}
+.btn.pause {
+    background: no-repeat center/100% url(../assets/pause.svg)
+}
+.btn.back {
+    background: no-repeat center/50% url(../assets/prev.svg)
+}
+.btn.forward {
+    background: no-repeat center/50% url(../assets/next.svg)
+}
+
+
+/* Common */
+
+.title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    color: #fff;
+}
+
+.btn {
+    height: 60px;
+    width: 60px;
+    border: none;
+}
