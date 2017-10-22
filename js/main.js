@@ -7,13 +7,15 @@ function initPage(times, images, audioSrc) {
     /* Variables */
     var currentTagIndex = 0;
     var allTags = [];
-    // initialise all tabs
+    // initialise all tags 
+    // each tag is an object {time: time, image: (link to the image)}
     for (i=0; i < times.length; i++) {
         allTags.push({
             time: times[i],
             image: images[i]
         });
     }
+    // safety to check the array is ordered correctly
     allTags.sort(function(a, b) {
         var t_1 = a.time,
             t_2 = b.time;
@@ -48,7 +50,9 @@ function initPage(times, images, audioSrc) {
     }
 
     function handleSkipBackward() {
+        // check if it is the first index, if true, don't do anything
         if (currentTagIndex < 1) return;
+
         var newTag = allTags[currentTagIndex - 1]
         audio.currentTime = newTag.time;
         updateIllustrationContent(newTag.image);
@@ -66,6 +70,7 @@ function initPage(times, images, audioSrc) {
     }
 
     function handleTimelineClick(e) {
+
         var newTime = (e.layerX/e.target.clientWidth) * audio.duration;
         var newIndex = getIndexFromTime(newTime);
 
@@ -93,6 +98,7 @@ function initPage(times, images, audioSrc) {
         audio.play();
         mainButton.classList.remove("play");
         mainButton.classList.add("pause");
+        // update the time every second
         timer = setInterval(updateTime, 1000);
     }
 
@@ -121,7 +127,10 @@ function initPage(times, images, audioSrc) {
     }
 
     /* Initialize Content */
+    
+    // set illustrated content
     var container = document.getElementById("illustration-content");
     container.src = allTags[0].image;
+    // set audio source
     audio.src = audioSrc;
 }
